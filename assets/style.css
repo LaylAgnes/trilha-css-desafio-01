@@ -149,89 +149,35 @@ footer a {
   text-decoration: none;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVO REAL OFICIAL */
 
 @media (max-width: 1024px) {
-  .banner .banner-content {
-    width: 90%;
-  }
-
+  .banner .banner-content,
   #course-content,
   #professional-challenges {
-    width: 90%;
+    width: 95%;
   }
 
   #course-content .modules-list .module {
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  h2 {
-    font-size: 1.5rem;
+  body {
+    overflow-x: hidden;
   }
 
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  /* Banner responsivo */
   .banner {
     height: auto;
     padding: 40px 20px;
-  }
-
-  .banner .banner-content {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .banner h1 {
-    font-size: 2rem;
-  }
-
-  .banner p {
-    font-size: 1rem;
-  }
-
-  .banner .logo {
-    width: 180px;
-    height: 180px;
-  }
-
-  #course-content {
-    width: 100%;
-    padding: 0 16px;
-  }
-
-  #course-content .modules-list .module {
-    width: 100%;
-  }
-
-  #transform-world {
-    padding: 100px 20px;
-    background-attachment: scroll;
-    height: auto;
-  }
-
-  #transform-world p {
-    font-size: 1.8rem;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  #professional-challenges {
-    width: 100%;
-    padding: 0 16px;
-  }
-
-  footer .dio-logo {
-    width: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .banner h1 {
-    font-size: 1.6rem;
-  }
-
-  .banner p {
-    font-size: 0.95rem;
+    background-size: cover;
+    background-position: center;
   }
 
   .banner .logo {
@@ -239,16 +185,106 @@ footer a {
     height: 140px;
   }
 
-  .banner .banner-content button {
-    font-size: 0.85rem;
-    padding: 12px 24px;
+  .banner .banner-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 
+  .banner h1 {
+    font-size: 1.6rem;
+    word-break: break-word;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner .banner-content button {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
+
+  /* Conteúdo do curso */
+  #course-content {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  #course-content .modules-list .module {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* Seção transform-world */
   #transform-world {
-    padding: 80px 16px;
+    height: auto;
+    padding: 80px 20px;
+    background-attachment: scroll; /* para celulares não bugar */
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
   }
 
   #transform-world p {
+    font-size: 1.6rem;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Desafios Profissionais */
+  #professional-challenges {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  #professional-challenges img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  footer .dio-logo {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .banner h1 {
     font-size: 1.4rem;
+  }
+
+  .banner p {
+    font-size: 0.9rem;
+  }
+
+  .banner .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .banner .banner-content button {
+    font-size: 0.8rem;
+    padding: 10px 18px;
+  }
+
+  #transform-world {
+    padding: 60px 16px;
+  }
+
+  #transform-world p {
+    font-size: 1.3rem;
+  }
+
+  footer .dio-logo {
+    width: 140px;
   }
 }
